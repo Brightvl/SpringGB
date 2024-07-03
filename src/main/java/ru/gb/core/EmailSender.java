@@ -21,7 +21,7 @@ public class EmailSender {
   public void sendEmail(String subject, String body, String recipient) {
     // ...
     System.out.println("Письмо [" + subject + "] отправлено получателю (" + recipient + ")");
-    System.out.println("Адрес sumpt: " + parameters.getEmailServerAddress());
+    System.out.println("Адрес sumpht: " + parameters.getEmailServerAddress());
   }
 
 }
