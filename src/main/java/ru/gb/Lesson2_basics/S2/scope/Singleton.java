@@ -1,4 +1,4 @@
-package ru.gb.Lesson2_basics.scope;
+package ru.gb.Lesson2_basics.S2.scope;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;

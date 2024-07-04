@@ -1,4 +1,4 @@
-package ru.gb.Lesson2_basics.configuration;
+package ru.gb.Lesson2_basics.S2.configuration;
 
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package ru.gb.Lesson2_basics.sql;
+package ru.gb.Lesson2_basics.S2.sql;
 
 import java.sql.Connection;
 

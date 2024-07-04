@@ -1,4 +1,4 @@
-package ru.gb.Lesson2_basics.configuration;
+package ru.gb.Lesson2_basics.S2.configuration;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 

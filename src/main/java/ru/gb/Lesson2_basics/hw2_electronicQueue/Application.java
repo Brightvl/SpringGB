@@ -1,6 +1,8 @@
-package ru.gb.Lesson2_basics.hw;
+package ru.gb.Lesson2_basics.hw2_electronicQueue;
 
-public class Homework {
+import org.springframework.boot.SpringApplication;
+
+public class Application {
 
   /**
    * Напрограммировать электронную очередь.
@@ -25,4 +27,7 @@ public class Homework {
    * 3.3 ...
    */
 
+  public static void main(String[] args) {
+      SpringApplication.run(ru.gb.Lesson2_basics.S2.Application.class, args);
+  }
 }

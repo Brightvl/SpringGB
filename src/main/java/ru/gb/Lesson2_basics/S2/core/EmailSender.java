@@ -1,6 +1,5 @@
-package ru.gb.Lesson2_basics.core;
+package ru.gb.Lesson2_basics.S2.core;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /*
