@@ -1,40 +1,38 @@
-package ru.gb.scope;
+package ru.gb.Lesson2_basics.scope;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+/*
+ На каждый вызов конструктора вызывается инкремент
+
+  Prototype работает по вызову
+ */
+@Scope(ConfigurableListableBeanFactory.SCOPE_PROTOTYPE)
 @Component
-@Scope(ConfigurableListableBeanFactory.SCOPE_SINGLETON)
-public class Singleton {
+public class Prototype {
 
   private static long counter = 1L;
 
   private final Long id;
-  private final Prototype prototype;
 
-  public Singleton(Prototype prototype) {
+//  @Autowired
+  public Prototype() {
     id = counter++;
-    this.prototype = prototype;
-
-    System.out.println("Singleton CREATED");
   }
 
   @PostConstruct
   public void init() {
-    System.out.println("Singleton INIT");
+    System.out.println("Prototype #" + id + " INIT");
   }
 
   @PreDestroy
   public void destroy() {
-    System.out.println("Singleton DESTROY");
-  }
-
-  public void printIds() {
-    System.out.println("Prototype(id) = " + prototype.getId());
-    System.out.println("Singleton(id) = " + id);
+    System.out.println("Prototype #" + id + " DESTROY");
   }
 
   public Long getId() {

@@ -1,4 +1,4 @@
-package ru.gb.hw;
+package ru.gb.Lesson2_basics.hw;
 
 public class Homework {
 
